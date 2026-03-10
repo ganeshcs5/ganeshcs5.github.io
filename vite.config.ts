@@ -6,7 +6,7 @@ const isGitHubActions = !!process.env.GITHUB_ACTIONS;
 const repoName = process.env.GITHUB_REPOSITORY
   ? process.env.GITHUB_REPOSITORY.split("/")[1]
   : undefined;
-const base = isGitHubActions && repoName ? `/${repoName}/` : "/";
+const base = isGitHubActions && repoName !== 'ganeshcs5.github.io' ? `/${repoName}/` : "/";
 
 export default defineConfig({
   base,
