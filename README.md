@@ -1,82 +1,48 @@
-# Personal Portfolio Website
+# Rajesh Portfolio
 
-A modern, responsive personal portfolio website showcasing my skills, experience, and interests as a Software Engineer.
+This is a Vite + React + TypeScript portfolio project.
 
-## 🚀 Features
+## Run locally
 
-- Responsive design that works on all devices
-- Modern and clean user interface
-- Interactive sections for showcasing:
-  - About Me
-  - Technical Skills
-  - Interests & Hobbies
-  - Contact Information
-- Smooth scrolling navigation
-- Social media integration
-- Professional contact information
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome Icons
-- Google Fonts
-
-## 📁 Project Structure
-
-```
-.
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles
-├── script.js           # JavaScript functionality
-├── images/            # Image assets
-└── README.md          # Project documentation
+- Install dependencies:
+```bash
+npm install
 ```
 
-## 🎨 Design Features
+- Start dev server (open http://localhost:5173):
+```bash
+npm run dev
+```
 
-- Clean and minimalist design
-- Responsive navigation menu
-- Animated sections
-- Skill grid layout
-- Interest cards with icons
-- Social media links
-- Contact information section
+- Build production bundle:
+```bash
+npm run build
+```
 
-## 🔧 Setup and Installation
+- Preview production build locally:
+```bash
+npm run preview
+```
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ganeshcs5/ganeshcs5.github.io.git
-   ```
+## Deploy to GitHub Pages
 
-2. Navigate to the project directory:
-   ```bash
-   cd ganeshcs5.github.io
-   ```
+This repo includes a GitHub Actions workflow that builds the app and deploys the `dist` folder to GitHub Pages on pushes to the `main` branch.
 
-3. Open `index.html` in your web browser to view the website.
+What I added:
+- `vite.config.ts`: sets a proper `base` when the build runs in GitHub Actions.
+- `.github/workflows/pages.yml`: builds and deploys `./dist` to Pages.
 
-## 📱 Responsive Design
+Steps to enable deployment:
 
-The website is fully responsive and optimized for:
-- Desktop computers
-- Tablets
-- Mobile devices
+1. Commit and push the changes to your `main` branch:
+```bash
+git add -A
+git commit -m "Add Pages deploy workflow and README"
+git push origin main
+```
 
-## 🔗 Links
+2. On GitHub, confirm Pages is enabled for the repository (Settings → Pages). The workflow will publish the `gh-pages` site for you.
 
-- [GitHub Profile](https://github.com/ganeshcs5)
-- [LinkedIn Profile](https://www.linkedin.com/in/ganeshchandrasekhara/)
-- [Instagram Profile](https://www.instagram.com/ganeshkayaka/)
+3. If your default branch is not `main`, update `.github/workflows/pages.yml` to target your branch.
 
-## 📝 License
-
-This project is open source and available under the MIT License.
-
-## 👤 Contact
-
-- Email: ganeshchandrasekhara@gmail.com
-- Phone: +91 9845240170
-- Location: India 
+If you want, I can push the changes for you or adjust the workflow to use a different branch or a custom domain.
