@@ -1,4 +1,4 @@
-# Rajesh Portfolio
+# ganesh Portfolio
 
 This is a Vite + React + TypeScript portfolio project.
 
