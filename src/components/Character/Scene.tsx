@@ -88,7 +88,7 @@ const Scene = () => {
           element?.addEventListener("touchmove", (e: TouchEvent) =>
             handleTouchMove(e, (x, y) => (mouse = { x, y }))
           );
-        }, 200);
+        }, 200) as number;
       };
 
       const onTouchEnd = () => {
